@@ -86,12 +86,83 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
    body {
     background-image: url("https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/splash-general-3.png");
    }
+   main  figure  figcaption, h1, h2{
+    font-family: 'Roboto', sans-serif;
+   }
    /* ----------------- NAV ----------------- */
+
+   nav {
+     position: relative;
+     justify-content: center;
+   }
+   nav aside {
+     position: absolute;
+     top :0;
+     left: 0;
+   }
+
    /* ----------------- HEADER ----------------- */
+
+   header section {
+     margin: 0 1em;
+   }
+   header section h1 {
+     font-size: 3em;
+     line-height: 85%;
+   }
+
+   header section p {
+     font-size: 2em;
+     line-height: 85%;
+     text-align: left;
+   }
+
+   header div {
+     background-color:#2b345d;
+     color: #ffffff;
+   }
+   header > div > div {
+     flex-direction: column;
+     align-items: center;
+      width: 34%;
+      margin: auto;
+   }
+
+   header div div p {
+    font-family: 'Roboto', sans-serif;
+    color: #22ffdd;
+   }
+
    /* ----------------- MAIN ----------------- */
+   main {
+     text-align: center;
+   }
+   main section {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+
+
+  main section figure figcaption p {
+    font-family: 'Mulish', sans-serif;
+    margin: 0 1em;
+  }
+
+  main section div {
+    background-color: #eeeeee;
+    text-align: left;
+    margin: 1em;
+    padding: 1em;
+  }
 
    /* ----------------- RESPONSIVE TABLET ----------------- */
    /* ----------------- RESPONSIVE PC ----------------- */
@@ -101,6 +172,41 @@ textarea {
    ========================================================================== */
   .hidePhone {
     display: none;
+  }
+
+  .dFlex {
+    display: flex;
+  }
+
+  .btn {
+    margin: 2em;
+    width: fit-content;
+    height: 40px;
+    background-color: #4d22ff ;
+    color: white;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0 0.5em;
+    padding-top: 0.5em;
+    font-size: 20px;
+  }
+
+  .salary {
+    width: 90%;
+    margin:auto;
+    margin-top: 1em;
+  }
+
+  .img {
+    width: 215px;
+  }
+
+  .backColorPink {
+    background-color: rgba(204, 171, 221, 0.3);
+  }
+
+  .fWrap {
+    flex-wrap: wrap;
   }
 /*
  * Hide visually and from screen readers
