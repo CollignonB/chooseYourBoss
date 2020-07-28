@@ -82,7 +82,123 @@ fieldset {
 textarea {
   resize: vertical;
 }
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+   .hidePhone {
+    display: none;
+  }
 
+  .hideTablet {
+    display: none;
+  }
+
+  .dFlex {
+    display: flex;
+  }
+
+  .btn {
+    margin: 2em;
+    width: fit-content;
+    height: 40px;
+    background-color: #4d22ff ;
+    color: white;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0 0.5em;
+    padding-top: 0.5em;
+    font-size: 1.3em;
+  }
+
+  .btnInMain {
+    margin: auto;
+  }
+
+  .salary {
+    width: 90%;
+    margin:auto;
+    margin-top: 1em;
+  }
+
+  .img {
+    width: 215px;
+  }
+
+  .backColorPink {
+    background-color: rgba(204, 171, 221, 0.3);
+  }
+
+  .fWrap {
+    flex-wrap: wrap;
+  }
+ .textLeft {
+   text-align: left;
+ }
+ .figureWidth {
+   width: 55%;
+ }
+  
+ /* ----------------- RESPONSIVE INTERMEDIAIRE  ----------------- */
+    @media screen and (min-width : 530px) {
+      .figureWidth {
+        width: 45%;
+        flex-wrap: wrap;
+        margin-top: 1em;
+      }      
+    }
+   /* ----------------- RESPONSIVE TABLET ----------------- */
+   @media screen and (min-width : 768px) {
+     .hideTablet {
+       display: block;
+     }
+      header div {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1em;
+      }
+
+      header div div p{
+        margin-top: 1em;
+      }
+      main section div aside {
+        width: 40%;
+      }
+      main section div div {
+        width: 50%;
+        
+      }
+      img.scaled {
+        width: 100%;
+      }
+      .tabletScale {
+        display:flex;
+      }
+   }
+   /* ----------------- RESPONSIVE PC ----------------- */
+   
+   @media screen and (min-width : 1200px){
+    .hidePhone {
+      display: flex;
+    }
+    nav {
+  
+
+    }
+    nav aside {
+      display: none;
+    }
+
+    nav div ul {
+      list-style-type: none;
+      justify-content: space-between;
+
+    }
+    nav ul li a {
+      color: crimson;
+      margin: 0.5em 1em;
+    }
+
+   }
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -101,7 +217,7 @@ textarea {
 
    nav {
      position: relative;
-     justify-content: center;
+     /* justify-content: center; */
    }
    nav aside {
      position: absolute;
@@ -164,80 +280,6 @@ textarea {
     padding: 1em;
   }
 
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-  .hidePhone {
-    display: none;
-  }
-
-  .dFlex {
-    display: flex;
-  }
-
-  .btn {
-    margin: 2em;
-    width: fit-content;
-    height: 40px;
-    background-color: #4d22ff ;
-    color: white;
-    border-radius: 25px;
-    text-align: center;
-    padding: 0 0.5em;
-    padding-top: 0.5em;
-    font-size: 20px;
-  }
-
-  .btnInMain {
-    margin: auto;
-  }
-
-  .salary {
-    width: 90%;
-    margin:auto;
-    margin-top: 1em;
-  }
-
-  .img {
-    width: 215px;
-  }
-
-  .backColorPink {
-    background-color: rgba(204, 171, 221, 0.3);
-  }
-
-  .fWrap {
-    flex-wrap: wrap;
-  }
- .textLeft {
-   text-align: left;
- }
- .figureWidth {
-   width: 55%;
- }
-  
- /* ----------------- RESPONSIVE INTERMEDIAIRE  ----------------- */
-    @media screen and (min-width : 530px) {
-      .figureWidth {
-        width: 45%;
-        flex-wrap: wrap;
-        margin-top: 1em;
-      }      
-    }
-   /* ----------------- RESPONSIVE TABLET ----------------- */
-   @media screen and (min-width : 768px) {
-      header div {
-        display: flex;
-        justify-content: space-evenly;
-        padding: 1em;
-      }
-
-      header div div p{
-        margin-top: 1em;
-      }
-   }
-   /* ----------------- RESPONSIVE PC ----------------- */
 
 /*
  * Hide visually and from screen readers
