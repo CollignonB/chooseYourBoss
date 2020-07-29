@@ -98,9 +98,9 @@ textarea {
   }
 
   .btn {
-    margin: 2em;
+    margin: 2em 0;
     width: fit-content;
-    height: 40px;
+    height: 2em;
     background-color: #4d22ff ;
     color: white;
     border-radius: 25px;
@@ -112,12 +112,6 @@ textarea {
 
   .btnInMain {
     margin: auto;
-  }
-
-  .salary {
-    width: 90%;
-    margin:auto;
-    margin-top: 1em;
   }
 
   .img {
@@ -138,67 +132,14 @@ textarea {
    width: 55%;
  }
   
- /* ----------------- RESPONSIVE INTERMEDIAIRE  ----------------- */
-    @media screen and (min-width : 530px) {
-      .figureWidth {
-        width: 45%;
-        flex-wrap: wrap;
-        margin-top: 1em;
-      }      
-    }
-   /* ----------------- RESPONSIVE TABLET ----------------- */
-   @media screen and (min-width : 768px) {
-     .hideTablet {
-       display: block;
-     }
-      header div {
-        display: flex;
-        justify-content: space-evenly;
-        padding: 1em;
-      }
+ .scaled {
+  width: 100%;
+}
 
-      header div div p{
-        margin-top: 1em;
-      }
-      main section div aside {
-        width: 40%;
-      }
-      main section div div {
-        width: 50%;
-        
-      }
-      img.scaled {
-        width: 100%;
-      }
-      .tabletScale {
-        display:flex;
-      }
-   }
-   /* ----------------- RESPONSIVE PC ----------------- */
-   
-   @media screen and (min-width : 1200px){
-    .hidePhone {
-      display: flex;
-    }
-    nav {
-  
+  .smallImg {
+    width: 55%;
+  }
 
-    }
-    nav aside {
-      display: none;
-    }
-
-    nav div ul {
-      list-style-type: none;
-      justify-content: space-between;
-
-    }
-    nav ul li a {
-      color: crimson;
-      margin: 0.5em 1em;
-    }
-
-   }
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -217,7 +158,8 @@ textarea {
 
    nav {
      position: relative;
-     /* justify-content: center; */
+     justify-content: center;
+     border-bottom: 1px solid gray;
    }
    nav aside {
      position: absolute;
@@ -233,6 +175,10 @@ textarea {
    header section h1 {
      font-size: 3em;
      line-height: 85%;
+   }
+
+   header section article {
+     margin: 10em 2em;
    }
 
    header section p {
@@ -257,15 +203,19 @@ textarea {
    }
 
    /* ----------------- MAIN ----------------- */
-   main {
+  main {
      text-align: center;
    }
-   main section h1 {
+
+  main section {
+    padding-bottom: 1em;
+  }
+  main section h1 {
      margin-top: 0;
      padding-top: 1em;
    }
 
-   main section article {
+  main section article {
      justify-content: center;
      align-items: center;
    }
@@ -280,6 +230,136 @@ textarea {
     padding: 1em;
   }
 
+  main section div div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+ /* ----------------- RESPONSIVE INTERMEDIAIRE  ----------------- */
+ @media screen and (min-width : 530px) {
+  .figureWidth {
+    width: 45%;
+    flex-wrap: wrap;
+    margin-top: 1em;
+  }
+  .smallImg {
+    width: 45%;
+  }  
+}
+/* ----------------- RESPONSIVE TABLET ----------------- */
+@media screen and (min-width : 768px) {
+ .hideTablet {
+   display: block;
+ }
+
+ .tabletScale {
+  display:flex;
+  }
+
+  .figureWidth {
+    width: 34%;
+    margin: 1em;
+  }
+
+  .smallImg {
+    width : 25%;
+    margin:1em;
+  }
+
+  header div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;
+  }
+
+  header div div p{
+    margin-top: 1em;
+  }
+
+  main section div aside {
+    width: 40%;
+  }
+  main section div div {
+    width: 50%;
+    
+  }
+}
+/* ----------------- RESPONSIVE INTERMEDIAIRE ----------------- */
+@media screen and (min-width : 992px) {
+
+  .figureWidth {
+    width: 25%;
+  }
+
+  .smallImg{
+    width: 20%;
+  }
+
+}
+/* ----------------- RESPONSIVE PC ----------------- */
+
+@media screen and (min-width : 1200px){
+  .hidePhone {
+    display: flex;
+  }
+
+  .figureWidth {
+    width: 20%;
+    margin: 1em;
+  }
+
+  .smallImg {
+    width : 17%;
+    margin:1em;
+  }
+
+  nav {
+    justify-content: space-between;
+
+  }
+  nav aside {
+    display: none;
+  }
+
+  nav div ul {
+    list-style-type: none;
+    justify-content: flex-end;
+    margin: 1em;
+
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    margin: 1em;
+  }
+
+
+  header section {
+    margin : 0 20%;
+    padding: 2em;
+  }
+
+  header article {
+    width: 100%;
+    margin: 1em 0;
+  }
+  
+  header aside {
+    height: auto;
+  }
+
+  main  section div {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  main section div aside {
+    width: 30%;
+    margin-right: 5em;
+  }
+
+}
 
 /*
  * Hide visually and from screen readers
