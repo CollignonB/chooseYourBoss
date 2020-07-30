@@ -85,7 +85,7 @@ textarea {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-   .hidePhone {
+  .hidePhone {
     display: none;
   }
 
@@ -122,18 +122,18 @@ textarea {
     flex-wrap: wrap;
   }
  .textLeft {
-   text-align: left;
- }
- .figureWidth {
-   width: 55%;
- }
-  
- .scaled {
-  width: 100%;
-}
+    text-align: left;
+  }
+ .bigImg {
+    width: 55%;
+  }
 
   .smallImg {
     width: 55%;
+  }
+
+  .scaled {
+    width: 100%;
   }
 
 /* ==========================================================================
@@ -144,78 +144,83 @@ textarea {
     padding: 0;
   }
 
-   body {
+  body {
     background-image: url("https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/splash-general-3.png");
-   }
-   main  figure  figcaption,header div div p ,h1, h2{
+  }
+
+  main  figure  figcaption,header div div p ,h1, h2{
     font-family: 'Roboto', sans-serif;
-   }
+  }
    /* ----------------- NAV ----------------- */
 
-   nav {
-     position: relative;
-     justify-content: center;
-     border-bottom: 1px solid gray;
-   }
-   nav aside {
-     position: absolute;
-     top :0;
-     left: 0;
-   }
+  nav {
+    position: relative;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+  }
+
+  nav aside {
+    position: absolute;
+    top :0;
+    left: 0;
+  }
 
    /* ----------------- HEADER ----------------- */
 
-   header section {
-     margin: 0 1em;
-   }
-   header section h1 {
-     font-size: 3em;
-     line-height: 85%;
-   }
+  header section {
+    margin: 0 1em;
+  }
 
-   header section article {
-     margin: 10em 2em;
-   }
+  header section h1 {
+    font-size: 3em;
+    line-height: 85%;
+  }
 
-   header section p {
-     font-size: 2em;
-     line-height: 85%;
-   }
+  header section article {
+    margin: 10em 2em;
+  }
 
-   header div {
-     background-color:#2b345d;
-     color: #ffffff;
-   }
-   header > div > div {
-      flex-direction: column;
-      align-items: center;
-      width: 34%;
-      margin: auto;
-      margin-bottom: 0;
-   }
+  header section p {
+    font-size: 2em;
+    line-height: 85%;
+  }
 
-   header div div p {
+  header div {
+    background-color:#2b345d;
+    color: #ffffff;
+  }
+
+  header > div > div {
+    flex-direction: column;
+    align-items: center;
+    width: 34%;
+    margin: auto;
+    margin-bottom: 0;
+  }
+
+  header div div p {
     color: #22ffdd;
-   }
+  }
 
    /* ----------------- MAIN ----------------- */
   main {
-     text-align: center;
-   }
+    text-align: center;
+  }
 
   main section {
     padding-bottom: 1em;
     width: 80%;
     margin: auto;
   }
+
   main section h1 {
-     margin-top: 0;
-     padding-top: 1em;
-   }
+    margin-top: 0;
+    padding-top: 1em;
+  }
 
   main section article {
-     justify-content: center;
-     align-items: center;
+    justify-content: center;
+    align-items: center;
    }
   main section figure figcaption p {
     font-family: 'Mulish', sans-serif;
@@ -236,7 +241,7 @@ textarea {
 
  /* ----------------- RESPONSIVE INTERMEDIAIRE  ----------------- */
  @media screen and (min-width : 530px) {
-  .figureWidth {
+  .bigImg {
     width: 45%;
     flex-wrap: wrap;
     margin-top: 1em;
@@ -248,14 +253,14 @@ textarea {
 /* ----------------- RESPONSIVE TABLET ----------------- */
 @media screen and (min-width : 768px) {
  .hideTablet {
-   display: block;
+    display: block;
  }
 
  .tabletScale {
-  display:flex;
+    display:flex;
   }
 
-  .figureWidth {
+  .bigImg {
     width: 34%;
     margin: 1em;
   }
@@ -286,7 +291,7 @@ textarea {
 /* ----------------- RESPONSIVE INTERMEDIAIRE ----------------- */
 @media screen and (min-width : 992px) {
 
-  .figureWidth {
+  .bigImg {
     width: 25%;
   }
 
@@ -302,7 +307,7 @@ textarea {
     display: flex;
   }
 
-  .figureWidth {
+  .bigImg {
     width: 20%;
     margin: 1em;
   }
@@ -316,6 +321,7 @@ textarea {
     justify-content: space-between;
 
   }
+
   nav aside {
     display: none;
   }
@@ -324,8 +330,8 @@ textarea {
     list-style-type: none;
     justify-content: flex-end;
     margin: 1em;
-
   }
+
   nav ul li a {
     text-decoration: none;
     color: black;
